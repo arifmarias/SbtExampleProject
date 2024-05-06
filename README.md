@@ -91,7 +91,41 @@ The code also includes instructions for running it in IntelliJ with the specifie
 
 ## Running the Code
 
-Follow the instructions in the README file to set up the project, configure the required dependencies, and run the application in IntelliJ IDEA.
+Follow these steps to run the code in IntelliJ IDEA:
+
+1. **Set up IntelliJ IDEA**:
+   - Install IntelliJ IDEA Community Edition if you haven't already.
+   - Open IntelliJ IDEA and create a new Scala project.
+
+2. **Set up Spark and Scala Versions**:
+   - In IntelliJ IDEA, go to `File` > `Project Structure` > `Project Settings` > `Libraries`.
+   - Click on the `+` button and select `From Maven...`.
+   - Search for `org.apache.spark:spark-core_2.12:2.4.8` and add it to the project.
+   - Repeat the same process for `org.apache.spark:spark-sql_2.12:2.4.8`.
+
+3. **Set up JDK Version**:
+   - In IntelliJ IDEA, go to `File` > `Project Structure` > `Project Settings` > `Project`.
+   - Under the `Project SDK` section, select the appropriate JDK version (1.8) from the dropdown menu or configure a new JDK if needed.
+
+4. **Copy the Project Files**:
+   - Copy the `Main.scala` file and the case class files (`FlightData.scala`, `Passenger.scala`, `FlightsByMonth.scala`, `FrequentFlyer.scala`, `LongestRun.scala`, `FlightsTogether.scala`, and `FlightsInRange.scala`) to the appropriate location in your IntelliJ project.
+
+5. **Prepare the Input Data**:
+   - Create a new directory named `data` in the project root directory.
+   - Place the input CSV files (`flightData.csv` and `passengers.csv`) in the `data` directory.
+
+6. **Create the Output Directory**:
+   - Create a new directory named `Output` in the project root directory. This is where the output CSV files will be generated.
+
+7. **Run the Application**:
+   - In the `Main.scala` file, locate the `main` method.
+   - Right-click on the method name and select `Run 'Main.main()'`.
+
+The application should now run successfully, and the output CSV files will be generated in the `Output` directory within your project.
+
+Note:
+- Make sure to replace the placeholders in the code (e.g., file paths) with the appropriate values for your setup.
+- If you encounter any issues during the setup or run, refer to the Apache Spark and Scala documentation for additional guidance.
 
 ## Testing
 
