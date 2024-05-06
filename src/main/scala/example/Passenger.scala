@@ -1,3 +1,3 @@
 package example
 
-case class Passenger()
+case class Passenger(passengerId: Int, firstName: String, lastName: String)

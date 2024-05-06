@@ -1,3 +1,3 @@
 package example
 
-case class LongestRun()
+case class LongestRun(passengerId: Int, longestRun: Int)

@@ -1,3 +1,3 @@
 package example
 
-case class FlightsByMonth()
+case class FlightsByMonth(month: Int, numFlights: Long)
